@@ -1,0 +1,10 @@
+.DS_Store
+*.tmp.xml
+*.xml_tmp
+*.xml.out
+_tmp_*
+_*images
+relaton/
+iev/
+*.err.html
+*.err

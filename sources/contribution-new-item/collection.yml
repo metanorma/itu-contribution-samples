@@ -1,0 +1,34 @@
+directives:
+  - documents-inline
+  - collection-word-coverpage: null
+  - collection-word-intropage: null
+  - document-word-coverpage: ""
+  - document-word-intropage: "itu_embedded_intro.html"
+bibdata:
+  title:
+    - language: en
+      content: "Sample ITU contribution"
+  type: collection
+  docid:
+    type: ITU
+    id: SG17-C660
+  copyright:
+    owner:
+      name: International Telecommunications Union
+      abbreviation: ITU
+    from: 2019
+format:
+  - presentation
+  - html
+  - pdf
+  - doc
+  - rxl
+output_folder: contribution-new-item
+manifest:
+  level: document
+  title: Document
+  docref:
+    - fileref: document.adoc
+      identifier: SG17-C660
+    - fileref: target.adoc
+      identifier: ITU G.650

@@ -1,0 +1,354 @@
+= ITU-T Contribution samples
+
+This work item belongs to ITU-T SG 17.
+
+image:https://github.com/metanorma/itu-contribution-samples/actions/workflows/generate.yml/badge.svg["Build", link="https://github.com/metanorma/itu-contribution-samples/actions/workflows/generate.yml"]
+
+Published components are available here:
+
+* https://metanorma.github.io/itu-contribution-samples/[ITU-T Contribution samples]
+
+
+== General
+
+This repository contains sample contributions for ITU-T.
+
+For a real-life sample of an ITU-T contribution, see:
+
+* https://github.com/openitu/X.icd-schemas[X.icd-schemas at OpenITU]
+
+
+== Structure
+
+`metanorma.yml`::
+The site configuration for a Metanorma site. This file is used to define the
+site's title, description, and the documents that are published. Right now, it
+includes all templates defined in the `sources/` directory.
+
+`sources/`::
+source of the documents and models
+
+`sources/contribution-generic`::
+A generic contribution template. This is a simple contribution which is defined
+as one that does not *embed* any ITU-T Recommendation.
+
+`sources/contribution-new-item`::
+A contribution template for a new work item. This is a contribution that
+proposes a new work item that is *encoded as ITU-T Recommendation*, which is
+*embedded in the contribution bundle*.
+
+`sources/contribution-revision`::
+A contribution template for a revised work item. This is a contribution that
+revises a work item that is *encoded as ITU-T Recommendation*, which is
+*embedded in the contribution bundle*.
+
+`_site/`::
+(automatically generated after processing) published documents.
+
+
+[[iterate-document]]
+== Working with a generic contribution
+
+The generic contribution template is a simple contribution that is not combined
+with any ITU-T Recommendation.
+
+The contents are defined in `sources/contribution-generic/sections/`.
+
+There is only *one document* in this template, located at
+`sources/contribution-generic/document.adoc`.
+
+Steps to iterate on the document:
+
+. Edit the document at `sources/contribution-generic/document.adoc` and its
+contents in `sources/contribution-generic/sections/`.
+
+. Run `metanorma sources/contribution-generic/document.adoc` to build the
+document.
+
+. The output will be available at
+`sources/contribution-generic/document.{doc|pdf|html|rxl}`. Check the output to
+ensure that it is correct.
+
+. Done.
+
+== Working with contributions with embedded documents
+
+The contribution templates for new work items and revised work items are
+contributions that propose or revise a work item that is encoded as an ITU-T
+Recommendation.
+
+This means that there are two documents in these templates:
+
+* The contribution document itself (the "`contribution document`")
+* The ITU-T Recommendation that is proposed or revised (the "`target document`")
+
+The final "contribution bundle" is created by combining the contribution
+document and the target document, using a Metanorma collection,
+which is defined using a file called `collection.yml`. The output of the
+collection is a single document that includes both the contribution document
+and the target document.
+
+Contribution document:
+
+`sources/contribution-{type}/document.adoc`::
+The contribution document is defined in this file.
++
+[example]
+====
+If you run
+`metanorma sources/contribution-{type}/document.adoc`, you will
+get the outputs of `document.{doc|pdf|html|rxl}` (defined in the document) as
+generated artifacts.
+====
+
+`sources/contribution-{type}/sections/`::
+The contents of the contribution document are defined in this directory.
+
+Target document:
+
+`sources/contribution-{type}/target.adoc`::
+The target document is defined in this file.
++
+[example]
+====
+If you run
+`metanorma sources/contribution-{type}/target.adoc`, you will
+get the outputs of `target.{doc|pdf|html|rxl}` (defined in the document) as
+generated artifacts.
+====
+
+`sources/contribution-{type}/target-sections/`::
+The contents of the target document are defined in this directory.
+
+Site configuration file:
+
+`sources/contribution-{type}/contribution.yml`::
+The site configuration file for the contribution document, which will build
+a Metanorma site that includes:
++
+* The contribution document
+* The target document
+* The contribution bundle that combines the contribution document and the
+  target document.
++
+[example]
+====
+If you run
+`metanorma site generate sources/contribution-{type}/contribution.yml`, you will
+get a `_site` directory that includes the contribution document, the target
+document, and the contribution bundle.
+====
+
+Collection file:
+
+`sources/contribution-{type}/collection.yml`::
+The collection file defines the documents in the contribution bundle.
++
+[example]
+====
+If you run
+`metanorma collection sources/contribution-{type}/collection.yml`, you will
+get a `sources/contribution-{type}/contribution-{type}/` directory (defined in
+collection.yml) that contains the generated contribution bundle.
+====
+
+Given that the contribution document and the target document are separate
+documents, they are built separately and can also be published separately.
+
+This means that the target document and the contribution document *must already
+build* before the contribution bundle can be generated.
+
+When working with the collection, please ensure:
+
+* The target document compiles validly. e.g. `metanorma
+sources/contribution-{type}/target.adoc` already gives you proper output of
+`target.{doc|pdf|html|rxl}`.
+
+* The contribution document compiles validly. e.g. `metanorma
+sources/contribution-{type}/document.adoc` already gives you proper output of
+`document.{doc|pdf|html|rxl}`.
+
+* The collection file is correctly defined. The collection file should have the
+correct `target` document defined.
+
+
+
+Steps to iterate on the collection:
+
+. Iterate on the contribution document and the target document independently as
+described in <<iterate-document>>.
+
+. Once both the contribution document and the target document are ready, run
+`metanorma collection sources/contribution-{type}/collection.yml` to build the contribution.
+
+. The output will be available at
+`sources/contribution-{type}/contribution-{type}/collection.{doc|pdf|html|rxl}`.
+Check the output to ensure that it is correct.
+
+. You may wish to tweak metadata defined in the collection configuration file
+at `sources/contribution-{type}/collection.yml`.
+
+. Done.
+
+
+
+== Usage
+
+This repository uses `metanorma` to run these processes.
+
+
+== Installing build tools
+
+See https://www.metanorma.org/install/
+
+
+
+
+== Building the site
+
+=== Local installs
+
+If you use a locally installed Metanorma, for the first time, run:
+
+[source,sh]
+----
+metanorma site generate --agree-to-terms
+----
+
+NOTE: This is to install fonts needed by ITU.
+
+Subsequently, just run:
+
+[source,sh]
+----
+metanorma site generate
+----
+
+NOTE: See https://www.metanorma.org/install/usage/ for details.
+
+
+=== Docker
+
+If you don't want to deal with local dependencies, use the docker
+version by:
+
+[source,sh]
+----
+docker run \
+  -v "$(pwd)":/metanorma \
+  -v "${HOME}/.fontist/fonts":/config/fonts \
+  -w /metanorma \
+  metanorma/metanorma \
+  metanorma site generate --agree-to-terms
+----
+
+NOTE: See https://www.metanorma.org/install/docker/ for details.
+
+
+
+== Building a single document or a collection
+
+[[local-installs]]
+=== Local installs
+
+If you use a locally installed Metanorma, for the first time, run:
+
+.Building a single document the first time
+[source,sh]
+----
+metanorma {filename} --agree-to-terms
+# or
+metanorma compile {filename} --agree-to-terms
+----
+
+.Building a single collection the first time
+[source,sh]
+----
+metanorma collection {filename, typically collection.yml} --agree-to-terms
+----
+
+NOTE: This is to install fonts needed by ITU.
+
+Subsequently, just run:
+
+.Building a single document
+[source,sh]
+----
+metanorma {filename}
+# or
+metanorma compile {filename}
+----
+
+.Building a single collection the first time
+[source,sh]
+----
+metanorma collection {filename, typically collection.yml}
+----
+
+NOTE: See https://www.metanorma.org/install/usage/ for details.
+
+=== Development installs
+
+If you are using the development version of Metanorma, the `bundle` command is
+required for creating an isolated context for the Metanorma development
+environment.
+
+A `Gemfile` is provided in the repository to set the context.
+
+These steps are necessary to ensure that the correct version of Metanorma is
+used to build the documents.
+
+. Prior to any `metanorma` command, please run `bundle install` to
+install the dependencies. This is a one-time operation.
+
+. Run `bundle update` (once in a while) to update the dependencies to the latest
+versions.
+
+. Please prefix all commands (as described in <<local-installs>>) to `metanorma`
+with `bundle exec`. i.e. use `bundle exec metanorma` instead of `metanorma`.
+
+[example]
+====
+To build a document using a development install, run `bundle exec metanorma
+{filename}`.
+====
+
+
+=== Docker
+
+If you don't want to deal with local dependencies, use the docker
+version by:
+
+.Building a single document with Docker
+[source,sh]
+----
+docker run \
+  -v "$(pwd)":/metanorma \
+  -v "${HOME}/.fontist/fonts":/config/fonts \
+  -w /metanorma \
+  metanorma/metanorma \
+  metanorma {filename} --agree-to-terms
+----
+
+.Building a single collection with Docker
+[source,sh]
+----
+docker run \
+  -v "$(pwd)":/metanorma \
+  -v "${HOME}/.fontist/fonts":/config/fonts \
+  -w /metanorma \
+  metanorma/metanorma \
+  metanorma collection {collection.yml} --agree-to-terms
+----
+
+NOTE: The `--agree-to-terms` flag is needed if the font cache
+(`"${HOME}/.fontist/fonts"`) is not present.
+
+NOTE: See https://www.metanorma.org/install/docker/ for details.
+
+
+== License
+
+Content from ITU is copyright to ITU.
+
+All other code and content, copyright Ribose. All rights reserved.
