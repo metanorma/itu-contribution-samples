@@ -2,9 +2,9 @@
 metanorma:
   source:
     files:
-      # - sources/contribution-generic/document.adoc
+      - sources/contribution-generic/document.adoc
       - sources/contribution-new-item/collection.yml
-      # - sources/contribution-revision/collection.yml
+      - sources/contribution-revision/collection.yml
 
   collection:
     organization: "International Telecommunications Union"
