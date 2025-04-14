@@ -11,7 +11,7 @@ bibdata:
   type: collection
   docid:
     type: ITU
-    id: SG17-C660
+    id: SG17-C661
   copyright:
     owner:
       name: International Telecommunications Union
@@ -29,6 +29,6 @@ manifest:
   title: Document
   docref:
     - fileref: document.adoc
-      identifier: SG17-C660
+      identifier: SG17-C661
     - fileref: target.adoc
       identifier: ITU G.650
