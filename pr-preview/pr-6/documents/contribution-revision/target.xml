@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.8.6" schema-version="v2.1.5" flavor="itu" document_suffix="ITU_G.650">
+<bibdata type="standard">
+<title language="en" type="main">Template for an ITU Recommendation or other document, which is the subject matter of a Revision Contribution</title>
+<docidentifier type="ITU" primary="true">ITU-T W.3000 (fictitious)</docidentifier><docidentifier type="ITU-lang">ITU-T W.3000 (fictitious)-E</docidentifier><docnumber>W.3000 (fictitious)</docnumber><date type="published"><on>2050-02-28</on></date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Telecommunication Union</name>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract>
+
+<p>The summary goes here.</p>
+</abstract><status><stage>draft</stage></status><copyright><from>2026</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><series type="main">
+<title>W: Authoring templates</title>
+</series><series type="secondary">
+<title>Recommendations</title>
+</series><series type="tertiary">
+<title>Metanorma template</title>
+</series><keyword>Authoring</keyword><keyword>metanorma</keyword><keyword>recommendation</keyword><keyword>template</keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>W.3000 (fictitious)</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2026</start><end>2028</end></studyperiod></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>current</document-scheme><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_537c66a5-bf9f-d8c0-d319-1508d8fcf739_ITU_G.650" inline-header="false" obligation="normative"><p id="_fba7b69c-d8d9-e7a4-11c9-e47687ab5966_ITU_G.650">© ITU 2026</p>
+
+<p id="_5d0be5a7-3d06-59c3-6502-3c92441bc890_ITU_G.650">All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the prior written permission of ITU.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_911011c5-3ac9-4f6f-405c-8c131b41e73d_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_f27e451a-4f9c-d727-571d-87f0a607acfc_ITU_G.650">INTELLECTUAL PROPERTY RIGHTS</title>
+<p id="_1bc27970-25ee-7492-ddb6-24f4a18210f0_ITU_G.650">ITU draws attention to the possibility that the practice or implementation of this Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no position concerning the evidence, validity or applicability of claimed Intellectual Property Rights, whether asserted by ITU members or others outside of the Recommendation development process.</p>
+
+<p id="_b4a64942-dd7c-4fca-5f4f-c2617402905e_ITU_G.650">As of the date of approval of this Recommendation, ITU had not received notice of intellectual property, protected by patents, which may be required to implement this Recommendation. However, implementers are cautioned that this may not represent the latest information and are therefore strongly urged to consult the TSB patent database at <link target="http://www.itu.int/ITU-T/ipr/"/>.</p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_9dd38482-45c7-7f0f-8e86-8c32ef5ca24b_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_907844a4-25f7-decc-f871-c375ac09126e_ITU_G.650">FOREWORD</title>
+<p id="_74da7d47-456d-ce61-4b36-1ad59cb1e56b_ITU_G.650">The International Telecommunication Union (ITU) is the United Nations specialized agency in the field of telecommunications , information and communication technologies (ICTs). The ITU Telecommunication Standardization Sector (ITU-T) is a permanent organ of ITU. ITU-T is responsible for studying technical, operating and tariff questions and issuing Recommendations on them with a view to standardizing telecommunications on a worldwide basis.</p>
+
+<p id="_1c78e9e2-1224-7b91-05a4-0c267f9e55c1_ITU_G.650">The World Telecommunication Standardization Assembly (WTSA), which meets every four years, establishes the topics for study by the ITU T study groups which, in turn, produce Recommendations on these topics.</p>
+
+<p id="_2a7c8732-df71-1b9b-2b53-b43b01d5ba81_ITU_G.650">The approval of ITU-T Recommendations is covered by the procedure laid down in WTSA Resolution 1.</p>
+
+<p id="_c0370190-6013-9ef0-a2eb-b9b0d595d74f_ITU_G.650">In some areas of information technology which fall within ITU-T's purview, the necessary standards are prepared on a collaborative basis with ISO and IEC.</p>
+
+<clause id="_9917fd55-f870-a403-9232-13906eba4d42_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_f0be0dea-4582-904c-d71e-6f6cc7ed9127_ITU_G.650">NOTE</title>
+<p id="_9c1305ba-dfcc-5c19-f2cc-2f6c0793adf2_ITU_G.650">In this Recommendation, the expression "Administration" is used for conciseness to indicate both a telecommunication administration and a recognized operating agency.</p>
+
+<p id="_3ec3110b-1050-6890-1090-1a48148bcf1a_ITU_G.650">Compliance with this Recommendation is voluntary. However, the Recommendation may contain certain mandatory provisions (to ensure, e.g., interoperability or applicability) and compliance with the Recommendation is achieved when all of these mandatory provisions are met. The words "shall" or some other obligatory language such as "must" and the negative equivalents are used to express requirements. The use of such words does not suggest that compliance with the Recommendation is required of any party.</p>
+</clause>
+</clause>
+
+<clause id="_0f11db38-a0d6-f46d-7944-69c3be340f57_ITU_G.650" anchor="draft-warning_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_a62d1306-fe7d-3588-4114-c3241884368e_ITU_G.650">CAUTION! PREPUBLISHED RECOMMENDATION</title>
+<p id="_51f12fb5-1097-0306-7e99-ae87c3f25f84_ITU_G.650">This prepublication is an unedited version of a recently approved Recommendation. It will be replaced by the published version after editing. Therefore, there will be differences between this prepublication and the published version.</p>
+</clause>
+</legal-statement>
+</boilerplate><preface><abstract id="_9596c6de-77ea-9d34-d4c8-0d4ceea6f2d6_ITU_G.650">
+<title id="_bddaac0f-3db8-580b-f6b0-f25cdc8b8c2d_ITU_G.650">Summary</title>
+<p id="_c837253e-ba91-1b74-94f7-800f976182e3_ITU_G.650">The summary goes here.</p>
+</abstract></preface><sections>
+<clause id="_e4ec6f05-9421-3874-afce-a715bdfcae70_ITU_G.650" type="scope" inline-header="false" obligation="normative">
+<title id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d_ITU_G.650">Scope</title>
+<p id="_944f2752-857c-cf03-31a5-a2a7ceda2c9c_ITU_G.650">This Recommendation provides a set of common, coherent and portable signal processing tools to facilitate the development of speech and audio coding algorithms, in particular within the standardization environment, where the following situations often happen:</p>
+
+<ul id="_7d23935c-9987-f74b-bcda-e2d4409daa5a_ITU_G.650"><li><p id="_cec40470-7df3-9cc7-c0c3-45dcfab86023_ITU_G.650">experimental results generated with different software tools may not be directly compared;</p>
+</li>
+<li><p id="_07a5c7d9-d910-c8bf-c219-1bcb98ea250a_ITU_G.650">software tools used by different organizations may not perfectly conform to related ITU T Recommendations, which may delay ITU-T standardization processes;</p>
+</li>
+<li><p id="_30d7d340-34ec-9887-8310-d846601c0f23_ITU_G.650">ITU-T Recommendations may leave scope for different implementations;</p>
+</li>
+<li><p id="_c876627a-2545-ad5e-7e86-e196068a0870_ITU_G.650">new speech and audio coding standards are increasing in complexity, leading to non bitexact specifications; furthermore, appropriate testing procedures to assure interoperability of different implementations are needed.</p>
+</li>
+</ul>
+</clause>
+
+
+
+<clause id="_0cedd963-6b61-8509-5cd0-670c71851ff3_ITU_G.650" obligation="normative" type="terms">
+<title id="_66eddf26-4111-3b7e-0cb7-548b7ab875c7_ITU_G.650">Definitions</title>
+<terms id="_62f93c85-2d30-6b66-efbd-eb5265f09002_ITU_G.650" type="external" obligation="normative">
+<title id="_6fd16f3a-e358-afdf-109b-6395e3625cfc_ITU_G.650">Terms defined elsewhere</title><p id="_2cb75602-135c-f103-a832-9261baf496e1_ITU_G.650">This Recommendation uses the following terms defined elsewhere:</p>
+<term id="_5230ce77-e2ae-7779-3b80-123866548db9_ITU_G.650" anchor="term-playlist_ITU_G.650"><preferred><expression>
+<name>playlist</name>
+</expression>
+</preferred>
+<definition id="_344f4154-9d8b-bb96-c4ea-686fed006abc_ITU_G.650"><verbal-definition id="_4a423cd7-0683-a234-85c8-911d6af11577_ITU_G.650"><p id="_ca249071-8ade-d28c-e76f-f116179dda02_ITU_G.650">Composed of a list of contents.</p></verbal-definition></definition>
+
+
+
+
+ <termnote id="_21e7b54a-4d58-f9e9-71b2-d37151671eea_ITU_G.650"><p id="_0bed5c77-01a7-e932-4542-6e377a3db7ea_ITU_G.650">This data is created and provided by digital service providers.</p>
+</termnote><source status="identical" type="authoritative"><origin bibitemid="h780" type="inline" citeas="ITU-T H.780 (06/2012)"/></source></term>
+
+<term id="_e171fbbb-f821-e2e7-2bb6-73605ed37297_ITU_G.650" anchor="term-metadata_ITU_G.650"><preferred><expression>
+<name>metadata</name>
+</expression>
+</preferred>
+<definition id="_fc711f2e-1f42-5c03-2f7c-596ff2be38a9_ITU_G.650"><verbal-definition id="_24cdbfb0-e9f9-2edb-a3c0-61e0cb851e62_ITU_G.650"><p id="_4ece6033-4266-8fd6-53d9-b776e6f3ca24_ITU_G.650">Structured information that pertains to the identity of users, systems, services, processes, resources, information or other entities.</p></verbal-definition></definition>
+
+
+ <source status="identical" type="authoritative"><origin bibitemid="x1255" type="inline" citeas="ITU-T X.1255 (09/2013)"/></source></term>
+</terms>
+
+<terms id="_b8f059cb-30ab-f1b2-947d-b7cf07152e19_ITU_G.650" type="internal" obligation="normative">
+<title id="_6f1b5406-5c7a-5992-b9a5-1fb0a666c2f2_ITU_G.650">Terms defined in this recommendation</title><p id="_e5a3a498-5d65-3b79-729e-f4f7bff7eac2_ITU_G.650">This Recommendation defines the following terms:</p>
+<term id="_9f7622b8-ea24-616a-f670-557b8b5f4ee1_ITU_G.650" anchor="term-region_ITU_G.650"><preferred><expression>
+<name>region</name>
+</expression>
+</preferred>
+<definition id="_2822e6ca-71f7-1517-2388-3080b0d4ea97_ITU_G.650"><verbal-definition id="_ef86daa4-2d7b-7327-fe09-3e0052cb6538_ITU_G.650"><p id="_6bb7910d-7d75-33fe-14d3-a415a96472bc_ITU_G.650">A partial area of the screen layout to be a content displayed.</p></verbal-definition></definition>
+ </term>
+
+<term id="_6ce6efc9-56cc-426e-5cfb-78fb8988f8d5_ITU_G.650" anchor="term-screen-layout_ITU_G.650"><preferred><expression>
+<name>screen layout</name>
+</expression>
+</preferred>
+<definition id="_eee5e20a-20ef-9592-6382-617b3a78cdfe_ITU_G.650"><verbal-definition id="_04f5cb6f-f9a1-aacc-e039-e353a5ec409c_ITU_G.650"><p id="_332aced0-446c-719d-557f-db3232c7123a_ITU_G.650">A composition of one or moreregions to be content displayed.</p></verbal-definition></definition>
+ </term>
+</terms>
+</clause>
+
+<definitions id="_4c4750d0-551f-48c3-e494-849fa4facba8_ITU_G.650" obligation="normative">
+<title id="_f8eef99e-0c21-e355-e32a-6c1a675f5661_ITU_G.650">Abbreviations and acronyms</title><p id="_9b554fa8-d000-11a8-1624-1c04abd8c71c_ITU_G.650">This Recommendation uses the following abbreviations and acronyms:</p>
+<dl id="_57d50085-dda1-eed0-b5f3-5bf8e8a246a5_ITU_G.650"><dt anchor="symbol-DS_ITU_G.650" id="_c6bbd7e6-c23a-68f4-e367-055445c71728_ITU_G.650">DS</dt>
+<dd id="_dbe3b2bf-a4d8-b1ff-82ad-35637d5fb9bd_ITU_G.650"><p id="_429bf3cb-2cbe-d69f-8693-ace257c5e92a_ITU_G.650">Digital Signage</p>
+</dd>
+<dt anchor="symbol-GML_ITU_G.650" id="_beb499f5-26f0-4f23-cb27-6977b31945a5_ITU_G.650">GML</dt>
+<dd id="_0f59729b-7d8a-ac29-47d1-320229e4454f_ITU_G.650"><p id="_3645f2f0-a5e3-d9be-dfc2-6ae87c392c8d_ITU_G.650">Geography Markup Language</p>
+</dd>
+<dt anchor="symbol-URI_ITU_G.650" id="_cceda344-c56d-e63c-59e6-80d92496f71e_ITU_G.650">URI</dt>
+<dd id="_cf0c3dd3-175e-7d52-9289-7bcaeb8a6d7c_ITU_G.650"><p id="_d441f63b-3980-0c52-0f52-60c9903d5343_ITU_G.650">Uniform Resource Identifier</p>
+</dd>
+</dl>
+</definitions>
+<clause id="_5d31d3a6-90bc-16c4-346a-2bb1db7ef247_ITU_G.650" type="conventions" inline-header="false" obligation="normative">
+<title id="_6948b4ae-f705-e7f5-8bc1-a5f5e5f04db2_ITU_G.650">Conventions</title>
+<p id="_42b2c587-05da-5ddf-d8cf-e5643a77ceae_ITU_G.650">This Recommendation follows the notation described in clause 6 of <eref type="inline" bibitemid="h780_ITU_G.650" citeas="ITU-T H.780 (06/2012)"/>. The notation is used in this Recommendation to facilitate the specification of the corresponding schema:</p>
+
+<ul id="_6bb77c01-c80c-01f3-e891-022c702f4496_ITU_G.650"><li><p id="_47fb7a23-ad8f-ab17-1233-fd5dca9b8c72_ITU_G.650"><em>Definition/Semantics</em>: definition and semantics of the element / attribute along with notes and value domain;</p>
+</li>
+<li><p id="_0828a0da-2364-1586-588e-a2f16dfb6929_ITU_G.650"><em>Type</em>: describes the type of the pertaining instance as defined in <xref target="table1_ITU_G.650"/>.</p>
+</li>
+</ul>
+
+<p id="_59f10342-3c57-89a3-7ea4-fe1d052a6fa8_ITU_G.650"><xref target="table1_ITU_G.650"/> contains data types used in this Recommendation; alternative representations may be shown which illustrates other data structures. In case of discrepancy with any alternative representation, the correct information is to be found in <xref target="table1_ITU_G.650"/>.</p>
+
+<table id="_557c9a62-5a77-8f9e-18d2-bbec9ec18ff9_ITU_G.650" anchor="table1_ITU_G.650">
+<name id="_0fb44627-ee03-a77c-96eb-a3fad5eed9f6_ITU_G.650">Data types used in this Recommendation</name>
+<thead><tr id="_4a1f5c06-6794-5020-0e34-95bd68784b69_ITU_G.650"><th id="_cd821468-88ef-4814-3f2a-c02c8ebcb0cb_ITU_G.650" valign="top" align="center">Type</th>
+<th id="_1bff9105-19df-79c2-54e1-87557db0cead_ITU_G.650" valign="top" align="center">Name</th>
+<th id="_fd82fa64-83d8-2784-9769-b48a184cdf05_ITU_G.650" valign="top" align="center">Notes/Reference</th>
+</tr></thead>
+<tbody><tr id="_1d2babae-a20e-8345-909e-86043efb0020_ITU_G.650"><td id="_f7b20318-69a4-5d4a-d645-038f2173369c_ITU_G.650" valign="top" align="left"><p id="_be462f0d-3656-740e-204a-3613850930ba_ITU_G.650"><tt>iso:countryCode</tt></p>
+</td>
+<td id="_1265b8bf-4f76-b735-7267-6b78450f2c25_ITU_G.650" valign="top" align="left"><p id="_40a1b50a-f71a-3177-1797-65590dd0ace1_ITU_G.650">Country Code</p>
+</td>
+<td id="_f82ea20e-4792-7f63-2f85-34f1e8432989_ITU_G.650" valign="top" align="left"><p id="_cb4f918e-020d-92d4-3435-c4f92d3e11ee_ITU_G.650">Used to specify country code. Defined in <eref type="inline" bibitemid="iso3166_ITU_G.650" citeas="ISO 3166-1"/>.</p>
+</td>
+</tr><tr id="_04451067-0008-1eb1-65d9-87ccfec8131b_ITU_G.650"><td id="_707d3f71-bdbe-0dce-3dc1-f675e21a14a2_ITU_G.650" valign="top" align="left"><p id="_dacc3b60-f2ec-9e88-3673-1fc895c7e664_ITU_G.650"><tt>gml:Point</tt></p>
+</td>
+<td id="_0823956d-538f-ee00-efc1-085a11ac4875_ITU_G.650" valign="top" align="left"><p id="_892cf28e-add5-f678-4a47-6972f1c5683a_ITU_G.650">GML point</p>
+</td>
+<td id="_9d2803d4-4a86-37c1-8d90-544403c5774b_ITU_G.650" valign="top" align="left"><p id="_89a8064f-3a7a-f546-0bf8-0d7ad502dd26_ITU_G.650">Used to specify simple point geometry in format of geography markup language (GML). A point consists of a <tt>&lt;Point&gt;</tt> element with a child <tt>&lt;coords&gt;</tt> element. Within <tt>&lt;coords&gt;</tt> the latitude and longitude values are separated by a space. Defined in <eref type="inline" bibitemid="iso19136_ITU_G.650" citeas="ISO 19136"/>.</p>
+</td>
+</tr><tr id="_4fb9f57d-e8d0-7bde-6b93-0fbe215bb682_ITU_G.650"><td id="_b0e37cb3-509c-d584-c056-ef914bddc401_ITU_G.650" valign="top" align="left"><p id="_69db10a0-a317-c0de-fe86-190e1d4b019a_ITU_G.650"><tt>xs:anyURI</tt></p>
+</td>
+<td id="_a8402ad8-3c54-a273-3a2c-e6d5984929bb_ITU_G.650" valign="top" align="left"><p id="_549f9e72-ce79-0c8a-df3b-75675e95d458_ITU_G.650">URI</p>
+</td>
+<td id="_9c31671b-f6f7-a27c-1cdf-6dae0f63bbad_ITU_G.650" valign="top" align="left"><p id="_580e0534-ed03-10d0-eeba-c46f66fc6e87_ITU_G.650">Used to specify uniform resource identifier (URI). Defined in <eref type="inline" bibitemid="xmlschema_ITU_G.650" citeas="W3C XMLSchema"/>.</p>
+</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_d5f19199-d2d0-c094-fa10-f849cd85960a_ITU_G.650" anchor="content_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_9c9f7801-af2e-ddf1-3145-dbefbaf80f19_ITU_G.650">Clause 6 of the Recommendation</title>
+<clause id="_b0923a04-24c5-76ac-1c19-92eca58f316f_ITU_G.650" anchor="general_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_24abdf30-6d12-8734-45d3-cd1948186a03_ITU_G.650">General</title>
+<p id="_150cb856-cf56-f1f5-88c2-acda8fff3f69_ITU_G.650">Here's where you place your main content.</p>
+</clause>
+
+<clause id="_413883bc-68e4-3c53-bb18-531f4e70f628_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_ea6f2d6c-3864-c94d-229a-110ffe51fcca_ITU_G.650">Data models</title>
+<p id="_9574e25c-fb68-3b85-e779-a7ad85dc940e_ITU_G.650">The following data models are used by other data models specified in this document.</p>
+</clause>
+</clause>
+
+
+
+
+
+
+</sections><annex id="_1e448b94-1f41-8ef8-f63d-200625af4745_ITU_G.650" anchor="annexA_ITU_G.650" inline-header="false" obligation="normative">
+<title id="_1a936de2-d131-a60c-59b3-249155d07e70_ITU_G.650">Annex Title</title>
+<p id="_e13d4ee7-e6b4-5c82-d6f9-b469849418d8_ITU_G.650">Body of Annex A.</p>
+</annex><annex id="_a5a91dc7-7716-377c-0dfe-12c70dde8c14_ITU_G.650" anchor="appendix1_ITU_G.650" inline-header="false" obligation="informative">
+<title id="_526c8dcf-ec85-7235-401b-a3ecc72ccfe0_ITU_G.650">Appendix Title</title>
+<p id="_17a42b51-0cd7-5476-719c-2ee55cd5c449_ITU_G.650">Body of Appendix I.</p>
+</annex><bibliography><references id="_7b64844d-7890-5f3e-1e92-2a4d43b8fc3f_ITU_G.650" normative="true" obligation="informative">
+<title id="_a3ee5286-2a1c-5059-3791-e9f94a22bdcd_ITU_G.650">References</title><p id="_8990d08f-344a-a8c8-e9a2-aff975b00acc_ITU_G.650">The following ITU-T Recommendations and other references contain provisions which, through reference in this text, constitute provisions of this Recommendation. At the time of publication, the editions indicated were valid. All Recommendations and other references are subject to revision; users of this Recommendation are therefore encouraged to investigate the possibility of applying the most recent edition of the Recommendations and other references listed below. A list of the currently valid ITU-T Recommendations is regularly published. The reference to a document within this Recommendation does not give it, as a stand-alone document, the status of a Recommendation.</p><bibitem id="_ec4b8ece-5abd-c2fb-8340-af120ad35f93_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="h780_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Digital signage: Service requirements and IPTV-based architecture</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Digital signage: Service requirements and IPTV-based architecture</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11664</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.780-201206-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T H.780 (06/2012)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Digital signage: Service requirements and IPTV-based architecture</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Digital signage: Service requirements and IPTV-based architecture</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/11664</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-H.780-201206-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T H.780 (06/2012)</docidentifier>
+      <date type="published">
+        <on>2012-06-29</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T H.780 describes a general framework for digital signage (DS) services based on IPTV architecture from the viewpoint of technical and service aspects. First, DS domains, a generic DS architecture and the classification of DS services are introduced. As technical IPTV specifications are close to those of DS, a brief comparison between the two services is provided (e.g., structure of a functional group and detailed media processing). Subsequently, high-level requirements concerning DS services are described. In addition, this Recommendation contains content delivery methods and details of functionalities of both server- and client-side applications for DS services.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2012</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 6 (04/2006)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 6 (04/2006)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 9 (05/2008)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 9 (05/2008)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 11 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 11 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 12 (11/2013)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 12 (11/2013)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 13 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 13 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 14 (10/2015)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 14 (10/2015)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 15 (01/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 15 (01/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 17 (11/2014)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 17 (11/2014)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 18 (10/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 18 (10/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 19 (04/2021)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 19 (04/2021)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">H Suppl. 21 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">H Suppl. 21 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_73af95b2-ab85-4f5f-bd88-c32ca5f33cf1_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="p56_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Objective measurement of active speech level</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Objective measurement of active speech level</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11461</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.56-201112-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T P.56 (12/2011)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>5</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2011</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.56 (03/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P.56 (03/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.56 (03/1993)</formattedref>
+      <docidentifier type="ITU" primary="true">P.56 (03/1993)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.56 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P.56 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P.56 (01/1987)</formattedref>
+      <docidentifier type="ITU" primary="true">P.56 (01/1987)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 10 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 16 (11/1988)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 20 (03/1993)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 23 (02/1998)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 24 (10/2005)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 25 (01/2011)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 26 (09/2017)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 28 (09/2020)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">P Suppl. 31 (01/2025)</formattedref>
+      <docidentifier type="ITU" primary="true">P Suppl. 31 (01/2025)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Objective measurement of active speech level</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Objective measurement of active speech level</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/11461</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-P.56-201112-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T P.56 (12/2011)</docidentifier>
+      <date type="published">
+        <on>2011-12-14</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>5</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">Recommendation ITU-T P.56 describes an easy to implement method to objectively determine the active speech level. It also acts as a reference against which other methods can be compared. The purpose of this Recommendation is not to exclude any other method but to ensure that results from different methods give the same result.
+
+In the early 2011 revision Annex B was added providing the necessary information on how to use the active speech level meter for super-wideband (SWB) signals.
+
+This second 2011 revision adds Annex C, which provides the necessary information on how to use the active speech level meter for full band (FB) signals.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2011</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P.56 (03/2011)</formattedref>
+          <docidentifier type="ITU" primary="true">P.56 (03/2011)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P.56 (03/1993)</formattedref>
+          <docidentifier type="ITU" primary="true">P.56 (03/1993)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P.56 (11/1988)</formattedref>
+          <docidentifier type="ITU" primary="true">P.56 (11/1988)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P.56 (01/1987)</formattedref>
+          <docidentifier type="ITU" primary="true">P.56 (01/1987)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 10 (11/1988)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 10 (11/1988)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 16 (11/1988)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 16 (11/1988)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 20 (03/1993)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 20 (03/1993)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 23 (02/1998)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 23 (02/1998)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 24 (10/2005)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 24 (10/2005)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 25 (01/2011)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 25 (01/2011)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 26 (09/2017)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 26 (09/2017)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 28 (09/2020)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 28 (09/2020)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">P Suppl. 31 (01/2025)</formattedref>
+          <docidentifier type="ITU" primary="true">P Suppl. 31 (01/2025)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_d1da0e01-f3f9-05f0-137d-a77e4bf4f42c_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="iso3166_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions</title>
+
+  
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Country code</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions — Part 1: Country code</title>
+
+  <uri type="src">https://www.iso.org/standard/72482.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:72482:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/07/24/72482.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 3166-1</docidentifier>
+  <docidentifier type="iso-reference">ISO 3166-1(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:3166:-1:stage-90.93</docidentifier>
+  <docnumber>3166</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>4</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2020</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 3166-1:2013</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 3166-1:2013</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions</title>
+
+      
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Country code</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Codes for the representation of names of countries and their subdivisions — Part 1: Country code</title>
+
+      <uri type="src">https://www.iso.org/standard/72482.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:72482:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/07/24/72482.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 3166-1:2020</docidentifier>
+      <docidentifier type="iso-reference">ISO 3166-1:2020(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:3166:-1:stage-90.93</docidentifier>
+      <docnumber>3166</docnumber>
+      <date type="published">
+        <on>2020-08</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Organization for Standardization</name>
+
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>4</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This document specifies basic guidelines for the implementation and maintenance of country codes. 
+This code is intended for use in any application requiring the expression of current country names in coded form.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2020</from>
+        <owner>
+          <organization>
+            
+<name>ISO</name>
+
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 3166-1:2013</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 3166-1:2013</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem anchor="xmlschema_ITU_G.650" id="_2f26b0cc-3b37-4375-0b7d-f1443feb12d9_ITU_G.650">
+  <formattedref format="application/x-isodoc+xml">W3C Recommendation (2004), <em>XML Schema Part 2: Datatypes Second Edition</em>.</formattedref>
+  <docidentifier type="W3C">W3C XMLSchema</docidentifier>
+  <docnumber>3C XMLSchema</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem>
+
+
+
+
+</references><references id="_5f6520de-93de-6911-fd6a-b2e509925a6b_ITU_G.650" normative="false" obligation="informative">
+<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023_ITU_G.650">Bibliography</title><bibitem id="_d4695efe-49ee-4f7a-ed05-c52b95052dc7_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="x1255_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Framework for discovery of identity management information</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Framework for discovery of identity management information</title>
+
+  <uri type="src">https://handle.itu.int/11.1002/1000/11951</uri>
+  <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.1255-201309-I!!PDF-E&amp;type=items</uri>
+  <docidentifier type="ITU" primary="true">ITU-T X.1255 (09/2013)</docidentifier>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Telecommunication Union</name>
+
+      <abbreviation>ITU</abbreviation>
+      <uri>www.itu.int</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>Published</stage>
+  </status>
+  <copyright>
+    <from>2013</from>
+    <owner>
+      <organization>
+        
+<name>International Telecommunication Union</name>
+
+        <abbreviation>ITU</abbreviation>
+        <uri>www.itu.int</uri>
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">X Suppl. 7 (02/2009)</formattedref>
+      <docidentifier type="ITU" primary="true">X Suppl. 7 (02/2009)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">X Suppl. 41 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">X Suppl. 41 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="hasEdition">
+    <bibitem>
+      <formattedref format="text/plain" language="en" script="Latn">X Suppl. 42 (09/2024)</formattedref>
+      <docidentifier type="ITU" primary="true">X Suppl. 42 (09/2024)</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Framework for discovery of identity management information</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Framework for discovery of identity management information</title>
+
+      <uri type="src">https://handle.itu.int/11.1002/1000/11951</uri>
+      <uri type="pdf">https://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-X.1255-201309-I!!PDF-E&amp;type=items</uri>
+      <docidentifier type="ITU" primary="true">ITU-T X.1255 (09/2013)</docidentifier>
+      <date type="published">
+        <on>2013-09-04</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Telecommunication Union</name>
+
+          <abbreviation>ITU</abbreviation>
+          <uri>www.itu.int</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">The purpose of Recommendation ITU-T X.1255 is to provide an open architecture framework in which identity management information can be discovered. This IdM information will necessarily be represented in different ways and supported by various trust frameworks or other IdM systems using different metadata schemas. This framework will enable, for example, entities operating within the context of one IdM system to have identifiers from other IdM systems accurately resolved. Without the capability for discovering such information, users and organizations (or programs operating on their behalf) are left to determine how best to establish the credibility and authenticity of a suitable identity, whether for a user, a system resource, information or other entities. Based on this information, it is up to the user or organization to determine whether or not to rely on a given trust framework or other IdM system for such purposes. The core components of the framework set forth in this Recommendation include: 1) a digital entity data model, 2) a digital entity interface protocol, 3) one or more identifier/resolution systems and 4) one or more metadata registries. These components form the basis of the open architecture framework.</abstract>
+      <status>
+        <stage>Published</stage>
+      </status>
+      <copyright>
+        <from>2013</from>
+        <owner>
+          <organization>
+            
+<name>International Telecommunication Union</name>
+
+            <abbreviation>ITU</abbreviation>
+            <uri>www.itu.int</uri>
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">X Suppl. 7 (02/2009)</formattedref>
+          <docidentifier type="ITU" primary="true">X Suppl. 7 (02/2009)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">X Suppl. 41 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">X Suppl. 41 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="hasEdition">
+        <bibitem>
+          <formattedref format="text/plain" language="en" script="Latn">X Suppl. 42 (09/2024)</formattedref>
+          <docidentifier type="ITU" primary="true">X Suppl. 42 (09/2024)</docidentifier>
+        </bibitem>
+
+      </relation>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="_8154c3c7-bbfd-1d1b-1164-219b6ee32100_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="iso19136_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML)</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Geography Markup Language (GML)</title>
+
+  <uri type="src">https://www.iso.org/standard/32554.html</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32554.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19136</docidentifier>
+  <docidentifier type="iso-reference">ISO 19136(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19136:stage-95.99</docidentifier>
+  <docnumber>19136</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>95</stage>
+    <substage>99</substage>
+  </status>
+  <copyright>
+    <from>2007</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 19136-1:2020</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 19136-1:2020</docidentifier>
+      <date type="circulated">
+        <on>2020-01-09</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML)</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Geography Markup Language (GML)</title>
+
+      <uri type="src">https://www.iso.org/standard/32554.html</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32554.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19136:2007</docidentifier>
+      <docidentifier type="iso-reference">ISO 19136:2007(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19136:stage-95.99</docidentifier>
+      <docnumber>19136</docnumber>
+      <date type="published">
+        <on>2007-09</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Organization for Standardization</name>
+
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">The Geography Markup Language (GML) is an XML encoding in compliance with ISO 19118 for the transport and storage of geographic information modelled in accordance with the conceptual modelling framework used in the ISO 19100 series of International Standards and including both the spatial and non-spatial properties of geographic features.
+ISO 19136:2007 defines the XML Schema syntax, mechanisms and conventions that:
+- provide an open, vendor-neutral framework for the description of geospatial application schemas for the transport and storage of geographic information in XML;
+- allow profiles that support proper subsets of GML framework descriptive capabilities;
+- support the description of geospatial application schemas for specialized domains and information communities;
+- enable the creation and maintenance of linked geographic application schemas and datasets;
+- support the storage and transport of application schemas and data sets;
+- increase the ability of organizations to share geographic application schemas and the information they describe.
+Implementers may decide to store geographic application schemas and information in GML, or they may decide to convert from some other storage format on demand and use GML only for schema and data transport.
+NOTE          If an ISO 19109 conformant application schema described in UML is used as the basis for the storage and transportation of geographic information, ISO 19136 provides normative rules for the mapping of such an application schema to a GML application schema in XML Schema and, as such, to an XML encoding for data with a logical structure in accordance with the ISO 19109 conformant application schema.</abstract>
+      <status>
+        <stage>95</stage>
+        <substage>99</substage>
+      </status>
+      <copyright>
+        <from>2007</from>
+        <owner>
+          <organization>
+            
+<name>ISO</name>
+
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 19136-1:2020</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 19136-1:2020</docidentifier>
+          <date type="circulated">
+            <on>2020-01-09</on>
+          </date>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_47a58a51-336b-3dcd-32c1-33ced69882a1_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="iso8601-1_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Date and time</title>
+
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Representations for information interchange</title>
+
+  
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Basic rules</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Date and time — Representations for information interchange — Part 1: Basic rules</title>
+
+  <uri type="src">https://www.iso.org/standard/70907.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:70907:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/07/09/70907.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 8601-1</docidentifier>
+  <docidentifier type="iso-reference">ISO 8601-1(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:8601:-1:stage-90.92</docidentifier>
+  <docnumber>8601</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>92</substage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 8601:2004</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletes">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO/AWI 8601-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/AWI 8601-1</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="updates">
+    <bibitem type="standard">
+      <formattedref format="text/plain">ISO 8601-1:2019/Amd 1:2022</formattedref>
+      <docidentifier type="ISO" primary="true">ISO 8601-1:2019/Amd 1:2022</docidentifier>
+      <date type="circulated">
+        <on>2024-10-31</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2026-04-16</fetched>
+      
+<title type="title-intro" format="text/plain" language="en" script="Latn">Date and time</title>
+
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Representations for information interchange</title>
+
+      
+<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Basic rules</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Date and time — Representations for information interchange — Part 1: Basic rules</title>
+
+      <uri type="src">https://www.iso.org/standard/70907.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:70907:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/07/09/70907.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 8601-1:2019</docidentifier>
+      <docidentifier type="iso-reference">ISO 8601-1:2019(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:8601:-1:stage-90.92</docidentifier>
+      <docnumber>8601</docnumber>
+      <date type="published">
+        <on>2019-02</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Organization for Standardization</name>
+
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">This document specifies representations of dates of the Gregorian calendar and times based on the 24-hour clock, as well as composite elements of them, as character strings for use in information interchange. It is also applicable for representing times and time shifts based on Coordinated Universal Time (UTC).
+This document excludes the representation of date elements from non-Gregorian calendars or times not from the 24-hour clock. This document does not address character encoding of representations specified in this document.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>92</substage>
+      </status>
+      <copyright>
+        <from>2019</from>
+        <owner>
+          <organization>
+            
+<name>ISO</name>
+
+          </organization>
+        </owner>
+      </copyright>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 8601:2004</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="obsoletes">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO/AWI 8601-1</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/AWI 8601-1</docidentifier>
+        </bibitem>
+
+      </relation>
+      <relation type="updates">
+        <bibitem type="standard">
+          <formattedref format="text/plain">ISO 8601-1:2019/Amd 1:2022</formattedref>
+          <docidentifier type="ISO" primary="true">ISO 8601-1:2019/Amd 1:2022</docidentifier>
+          <date type="circulated">
+            <on>2024-10-31</on>
+          </date>
+        </bibitem>
+
+      </relation>
+      <place>
+        <city>Geneva</city>
+      </place>
+    </bibitem>
+
+  </relation>
+  <place>
+    <city>Geneva</city>
+  </place>
+</bibitem><bibitem id="_e105f9aa-9841-eee4-3434-0fa710a2e90a_ITU_G.650" type="standard" schema-version="v1.2.9" anchor="rfc5646_ITU_G.650">
+  <fetched>2026-04-16</fetched>
+  
+<title type="main" format="text/plain">Tags for Identifying Languages</title>
+
+  <uri type="src">https://www.rfc-editor.org/info/rfc5646</uri>
+  <docidentifier type="IETF" primary="true">RFC 5646</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC5646</docidentifier>
+  <docnumber>RFC5646</docnumber>
+  <date type="published">
+    <on>2009-09</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      
+<name>          <completename language="en" script="Latn">A. Phillips</completename>       </name>
+
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      
+<name>          <completename language="en" script="Latn">M. Davis</completename>       </name>
+
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>RFC Publisher</name>
+
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="authorizer"/>
+    <organization>
+      
+<name>RFC Series</name>
+
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p id="_61b8ef17-42a5-5268-9615-cef14af892b3_ITU_G.650">This document describes the structure, content, construction, and semantics of language tags for use in cases where it is desirable to indicate the language used in an information object. It also describes how to register values for use in language tags and the creation of user-defined extensions for private interchange. This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</p>
+
+  </abstract>
+  <series>
+    
+<title format="text/plain">BCP</title>
+
+    <number>47</number>
+  </series>
+  <series>
+    
+<title format="text/plain">RFC</title>
+
+    <number>5646</number>
+  </series>
+  <series type="stream">
+    
+<title format="text/plain">IETF</title>
+
+  </series>
+  <keyword>language tags</keyword>
+  <keyword>private interchange</keyword>
+</bibitem>
+
+
+
+
+</references><references hidden="true" normative="false"/></bibliography>
+</metanorma>
