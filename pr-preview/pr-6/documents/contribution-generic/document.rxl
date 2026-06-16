@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" type="main">Template for ITU General Contribution</title>
-<docidentifier type="ITU" primary="true">SG 17-C3000</docidentifier><docidentifier type="ITU-lang">SG 17-C3000-E</docidentifier><docnumber>3000</docnumber><date type="published"><on>2050-02-28</on></date><contributor><role type="author"/><organization>
+<docidentifier type="ITU" primary="true">SG 17-C3000</docidentifier><docidentifier type="ITU-lang">SG 17-C3000-E</docidentifier><docidentifier type="ITU-lang-long">SG 17-C3000-E</docidentifier><docnumber>3000</docnumber><date type="published"><on>2050-02-28</on></date><contributor><role type="author"/><organization>
 <name>International Telecommunication Union</name>
 <abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="author"/><person>
 <name><completename>Fred Flintstone</completename></name>
@@ -14,7 +14,7 @@
 <name>Study Group 17</name>
 <identifier>SG 17</identifier></subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>International Telecommunication Union</name>
-<abbreviation>ITU</abbreviation></organization></contributor><version><draft>5</draft></version><language>en</language><script>Latn</script><abstract>
+<abbreviation>ITU</abbreviation></organization></contributor><version>5</version><language>en</language><script>Latn</script><abstract>
 
 </abstract><status><stage>draft</stage></status><copyright><from>2026</from><owner><organization>
 <name>International Telecommunication Union</name>

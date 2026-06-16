@@ -1,5 +1,5 @@
-<bibitem id="SG17-C661" type="collection" schema-version="v1.2.9">
-  <title format="text/plain" language="en">Sample ITU contribution</title>
+<bibdata type="collection" schema-version="v1.5.6">
+  <title language="en">Sample ITU contribution</title>
   <docidentifier type="ITU" primary="true">SG17-C661</docidentifier>
   <copyright>
     <from>2019</from>
@@ -10,4 +10,7 @@
       </organization>
     </owner>
   </copyright>
-</bibitem>
+  <ext>
+    <flavor>itu</flavor>
+  </ext>
+</bibdata>
