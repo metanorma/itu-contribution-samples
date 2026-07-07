@@ -1,0 +1,151 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>ITU-T Contribution samples</title><contributor><role type='author'/><organization><name>International Telecommunications Union</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Template for ITU General Contribution</title>
+  <uri type="xml">./documents/contribution-generic/document.xml</uri>
+  <uri type="pdf">./documents/contribution-generic/document.pdf</uri>
+  <uri type="doc">./documents/contribution-generic/document.doc</uri>
+  <uri type="html">./documents/contribution-generic/document.html</uri>
+  <uri type="rxl">./documents/contribution-generic/document.rxl</uri>
+  <docidentifier type="ITU" primary="true">SG 17-C3000</docidentifier>
+  <docidentifier type="ITU-lang">SG 17-C3000-E</docidentifier>
+  <docidentifier type="ITU-lang-long">SG 17-C3000-E</docidentifier>
+  <docnumber>3000</docnumber>
+  <date type="published">
+    <on>2050-02-28</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Fred Flintstone</completename>
+      </name>
+      <affiliation>
+        <organization>
+          <name>Bedrock Quarry</name>
+          <address>
+            <formattedAddress>Canada</formattedAddress>
+          </address>
+        </organization>
+      </affiliation>
+      <phone>555 5555</phone>
+      <phone type="fax">555 5556</phone>
+      <email>x@example.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <subdivision type="Bureau">
+        <name>T</name>
+      </subdivision>
+      <subdivision type="Group" subtype="study-group">
+        <name>Study Group 17</name>
+        <identifier>SG 17</identifier>
+      </subdivision>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>International Telecommunication Union</name>
+      <abbreviation>ITU</abbreviation>
+    </organization>
+  </contributor>
+  <version>5</version>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+
+</abstract>
+  <status>
+    <stage>draft</stage>
+  </status>
+  <copyright>
+    <from>2026</from>
+    <owner>
+      <organization>
+        <name>International Telecommunication Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword/>
+  <keyword/>
+  <keyword/>
+  <keyword/>
+  <ext schema-version="v1.1.3">
+    <doctype>contribution</doctype>
+    <flavor>itu</flavor>
+    <structuredidentifier>
+      <bureau>T</bureau>
+      <docnumber>3000</docnumber>
+    </structuredidentifier>
+    <question>
+      <identifier>Q10/17</identifier>
+      <name>Identity management and telebiometrics architecture and mechanisms</name>
+    </question>
+    <question>
+      <identifier>Q11/17</identifier>
+      <name>Generic technologies (such as Directory, PKI, formal languages, object identifiers) to support secure applications</name>
+    </question>
+    <ip-notice-received>false</ip-notice-received>
+    <meeting>Focus Group on Vehicular Multimedia meeting</meeting>
+    <meeting-place>Geneva</meeting-place>
+    <meeting-date>
+      <from>2000-01-01</from>
+      <to>2000-01-02</to>
+    </meeting-date>
+    <source>Source</source>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="collection" schema-version="v1.5.6">
+  <title language="en">Sample ITU contribution</title>
+  <uri type="xml">./documents/contribution-new-item/collection.xml</uri>
+  <uri type="pdf">./documents/contribution-new-item/collection.pdf</uri>
+  <uri type="doc">./documents/contribution-new-item/collection.doc</uri>
+  <uri type="rxl">./documents/contribution-new-item/collection.rxl</uri>
+  <docidentifier type="ITU" primary="true">SG17-C661</docidentifier>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>International Telecommunications Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.1.3">
+    <flavor>itu</flavor>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="collection" schema-version="v1.5.6">
+  <title language="en">Sample ITU contribution</title>
+  <uri type="xml">./documents/contribution-revision/collection.xml</uri>
+  <uri type="pdf">./documents/contribution-revision/collection.pdf</uri>
+  <uri type="doc">./documents/contribution-revision/collection.doc</uri>
+  <uri type="rxl">./documents/contribution-revision/collection.rxl</uri>
+  <docidentifier type="ITU" primary="true">SG17-C662</docidentifier>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>International Telecommunications Union</name>
+        <abbreviation>ITU</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <ext schema-version="v1.1.3">
+    <flavor>itu</flavor>
+  </ext>
+</bibdata></relation>
+</relaton-collection>
